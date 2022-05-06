@@ -18,6 +18,7 @@ jobs:
         with:
           node-version: "16.x"
           registry-url: "https://npm.pkg.github.com"
+      - run: cat /home/runner/work/_temp/.npmrc
       - run: yarn
         working-directory: client
       - run: yarn publish

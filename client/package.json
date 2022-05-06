@@ -60,7 +60,6 @@
     "url": "https://github.com/jerguslejko/agnostic.git"
   },
   "publishConfig": {
-    "access": "public",
     "registry": "https://npm.pkg.github.com"
   }
 }

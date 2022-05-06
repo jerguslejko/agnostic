@@ -3,10 +3,6 @@
   "license": "MIT",
   "main": "dist/index.js",
   "typings": "dist/index.d.ts",
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/jerguslejko/agnostic.git"
-  },
   "files": [
     "dist",
     "src"
@@ -58,5 +54,12 @@
   },
   "dependencies": {
     "zod": "^3.15.1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jerguslejko/agnostic.git"
+  },
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com"
   }
 }

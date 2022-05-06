@@ -31,7 +31,7 @@
     "singleQuote": true,
     "trailingComma": "es5"
   },
-  "name": "@jergus/agnostic",
+  "name": "@jerguslejko/agnostic",
   "author": "Jerguš Lejko",
   "module": "dist/agnostic.esm.js",
   "size-limit": [

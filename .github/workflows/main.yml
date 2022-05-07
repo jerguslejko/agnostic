@@ -1,15 +1,11 @@
-name: Publish package to GitHub Packages
+name: Publish packages
 
 on:
   push:
 
 jobs:
-  build:
+  client:
     runs-on: ubuntu-latest
-
-    permissions:
-      contents: read
-      packages: write
 
     steps:
       - uses: actions/checkout@v3
@@ -20,7 +16,7 @@ jobs:
           registry-url: "https://registry.npmjs.org"
       - run: yarn
         working-directory: client
-      - run: yarn publish
+      - run: yarn publish --access public
         working-directory: client
         env:
           NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
